@@ -4,7 +4,7 @@ import gspread
 from time import sleep
 from datetime import datetime
 from google.oauth2.service_account import Credentials
-from gspread_dataframe import set_with_dataframe
+#from gspread_dataframe import set_with_dataframe
 
 # Google Spreadsheet authetication
 scopes = [
