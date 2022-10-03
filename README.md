@@ -32,13 +32,15 @@ temp : 30.78  ℃
 hum :  46.11 ％
 
 Usage of append_row_to_gs_dt.py
-$ python3 append_row_to_gs_dt.py (gspreadへ日時の書き込み、ラズパイのみ)
+$ python3 append_row_to_gs_dt.py (gspreadへ日時の書き込み)
 ['2022-10-03 08:46:10']
 
-Usage of append_row_to_gs_all_in_one.py
-$ python3 append_row_to_gs_all_in_one.py (gspreadへ日付と温湿度の書き込み)
+Usage of append_row_to_gs_dt_th.py
+$ python3 append_row_to_gs_dt_th.py (gspreadへ日付と温湿度の書き込み)
 
 Work memo:
-append_row_to_gs_all_in_one.pyで温度湿度計測とgspreadへの日付書き込みを同時に記述するが、温度湿度計測の部分が動かない
-おそらく、温度湿度計測の部分をClass化する必要がある。
-BME280の記述をSH31と同様に変更する作業が必要と思われる
+2022.10.3：append_row_to_gs_dt_th.pyで日付と温湿度のGS書き込みに成功
+　残課題
+　　・気圧の読み込み
+　　・スケジューリング
+　　・他のセンサー追加
